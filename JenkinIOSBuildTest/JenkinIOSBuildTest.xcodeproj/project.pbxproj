@@ -12,9 +12,12 @@
 		7AF6D95C1ECE9EFC0006C8F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6D95A1ECE9EFC0006C8F0 /* Main.storyboard */; };
 		7AF6D95E1ECE9EFC0006C8F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6D95D1ECE9EFC0006C8F0 /* Assets.xcassets */; };
 		7AF6D9611ECE9EFC0006C8F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6D95F1ECE9EFC0006C8F0 /* LaunchScreen.storyboard */; };
+		F34E7CA9835BFC7BE6391689 /* Pods_JenkinIOSBuildTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4F5C05A42AA75C4691F7F1 /* Pods_JenkinIOSBuildTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A4F5C05A42AA75C4691F7F1 /* Pods_JenkinIOSBuildTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JenkinIOSBuildTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0621FF6187D5CB629A8F92 /* Pods-JenkinIOSBuildTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinIOSBuildTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JenkinIOSBuildTest/Pods-JenkinIOSBuildTest.release.xcconfig"; sourceTree = "<group>"; };
 		7AF6D9531ECE9EFC0006C8F0 /* JenkinIOSBuildTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinIOSBuildTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF6D9561ECE9EFC0006C8F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AF6D9581ECE9EFC0006C8F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		7AF6D95D1ECE9EFC0006C8F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF6D9601ECE9EFC0006C8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AF6D9621ECE9EFC0006C8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7321D8EE6A3DBCAA7AB4974 /* Pods-JenkinIOSBuildTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinIOSBuildTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JenkinIOSBuildTest/Pods-JenkinIOSBuildTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34E7CA9835BFC7BE6391689 /* Pods_JenkinIOSBuildTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28766E1BE449C7CB3A6FADE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7321D8EE6A3DBCAA7AB4974 /* Pods-JenkinIOSBuildTest.debug.xcconfig */,
+				6D0621FF6187D5CB629A8F92 /* Pods-JenkinIOSBuildTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7AF6D94A1ECE9EFC0006C8F0 = {
 			isa = PBXGroup;
 			children = (
 				7AF6D9551ECE9EFC0006C8F0 /* JenkinIOSBuildTest */,
 				7AF6D9541ECE9EFC0006C8F0 /* Products */,
+				28766E1BE449C7CB3A6FADE9 /* Pods */,
+				A5E0A697265A2215C2956E7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = JenkinIOSBuildTest;
 			sourceTree = "<group>";
 		};
+		A5E0A697265A2215C2956E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A4F5C05A42AA75C4691F7F1 /* Pods_JenkinIOSBuildTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AF6D9651ECE9EFC0006C8F0 /* Build configuration list for PBXNativeTarget "JenkinIOSBuildTest" */;
 			buildPhases = (
+				0E7DCD481AB8F066CBE9B274 /* [CP] Check Pods Manifest.lock */,
 				7AF6D94F1ECE9EFC0006C8F0 /* Sources */,
 				7AF6D9501ECE9EFC0006C8F0 /* Frameworks */,
 				7AF6D9511ECE9EFC0006C8F0 /* Resources */,
+				B3CBB7A8083ACCE5CF664063 /* [CP] Embed Pods Frameworks */,
+				D893D869ED5FC801F72DE8E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E7DCD481AB8F066CBE9B274 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CBB7A8083ACCE5CF664063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JenkinIOSBuildTest/Pods-JenkinIOSBuildTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D893D869ED5FC801F72DE8E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JenkinIOSBuildTest/Pods-JenkinIOSBuildTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AF6D94F1ECE9EFC0006C8F0 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		7AF6D9661ECE9EFC0006C8F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7321D8EE6A3DBCAA7AB4974 /* Pods-JenkinIOSBuildTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JenkinIOSBuildTest/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		7AF6D9671ECE9EFC0006C8F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0621FF6187D5CB629A8F92 /* Pods-JenkinIOSBuildTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JenkinIOSBuildTest/Info.plist;
